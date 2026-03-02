@@ -190,7 +190,3 @@ cd front && npm run dev
 ```
 
 Le frontend tourne sur `http://localhost:3001` et proxy les appels API vers `http://localhost:3000`. Faites attention lors du lancement a ne pas intervertir !
-cd front && npm run dev
-```
-
-Le frontend tourne sur `http://localhost:3001` et proxy les appels API vers `http://localhost:3000`.
