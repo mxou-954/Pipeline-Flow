@@ -1,6 +1,7 @@
 # 🔥 Pipeline Flow — CRM Tinder
 
 Pipeline Flow est né d'une frustration simple : la pagination et l'interface de noCRM.io rendaient la qualification de leads pénible et lente. Naviguer entre les pages, ouvrir chaque fiche, qualifier, revenir en arrière… à ~30 fiches par jour, c'était un gouffre de temps.
+
 L'idée : un système de swipe inspiré de Tinder pour traiter les opportunités une par une, sans friction. Swipe gauche pour éliminer, swipe droit pour conserver, édition inline de la description, changement de pipeline en un clic.
 Résultat : 100+ fiches qualifiées et normalisées par jour, soit 3x plus qu'avec l'interface native noCRM.
 
