@@ -145,10 +145,12 @@ Toutes les routes sont préfixées par `/cards`.
 | Méthode | Route | Description |
 |---------|-------|-------------|
 | `GET` | `/cards/next?status=todo,standby&offset=0&limit=1` | Récupère le prochain lead à qualifier |
-| `POST` | `/cards/:id/lose` | Déplace un lead vers le step "Perdus" (460220) |
+| `POST` | `/cards/:id/lose` | Déplace un lead vers le step "Perdus" (id : 460220) |
 | `PATCH` | `/cards/:leadID` | Met à jour la description d'un lead |
 | `POST` | `/cards/:leadID/step` | Change le step/pipeline d'un lead |
 | `GET` | `/cards/:leadID/comments` | Récupère l'historique des commentaires |
+
+⚠️ Noubliez pas de changer l'id de la constante stepId par votre propre id ou vous souhaitez renvoyer les opportunités indésirables. (ligne 59 - nocrm.controller.ts)
 
 ### Mode Prospects
 
@@ -192,4 +194,4 @@ cd back && npm run start:dev &
 cd front && npm run dev
 ```
 
-Le frontend tourne sur `http://localhost:3001` et proxy les appels API vers `http://localhost:3000`. Faites attention lors du lancement a ne pas intervertir !
+⚠️ Le frontend tourne sur `http://localhost:3001` et proxy les appels API vers `http://localhost:3000`. Faites attention lors du lancement a ne pas intervertir !
