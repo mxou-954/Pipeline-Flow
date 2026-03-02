@@ -41,15 +41,17 @@ npm install
 npm run dev              # démarre sur http://localhost:3001
 ```
 
-### Variables d'environnement
+### Variables d'environnement & Constantes
 
-**Frontend** (`front/.env.local`) :
+**Frontend** : Le frontend ne nécessite pas de `.env`, par contre vous devez modifier les constantes selon votre configuration.
+Dans `/app/refactored/constants/index.ts`, vous trouverez une constante nommée `stepPipelines` : remplacez les `id` et les `name` par vos propres valeurs. Vous trouverez les IDs dans votre compte noCRM à l'adresse : `/admin/account/objects_ids`.
 
-```env
-NEXT_PUBLIC_API_BASE=http://localhost:3000
+**Backend** : la clé API et le subdomain noCRM sont configurés dans `nocrm.service.ts`, mais avant cela vous devez créer un `.env` à la racine du backend. Le `.env` se présente sous la forme :
+
+```bash
+NOCRM_API_KEY="xxxxx"
+SUBDOMAIN="xxxxx"
 ```
-
-**Backend** : la clé API et le subdomain noCRM sont configurés dans `nocrm.service.ts`.
 
 ---
 
@@ -206,6 +208,10 @@ Toutes les routes sont préfixées par `/cards`.
 ```bash
 # Lancer les deux en parallèle
 cd back && npm run start:dev &
+cd front && npm run dev
+```
+
+Le frontend tourne sur `http://localhost:3001` et proxy les appels API vers `http://localhost:3000`.
 cd front && npm run dev
 ```
 
