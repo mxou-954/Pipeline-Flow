@@ -154,14 +154,6 @@ Toutes les routes sont préfixées par `/cards`.
 | `GET` | `/cards/next/prospectList?listId=265238` | Récupère un prospect aléatoire non converti |
 | `POST` | `/cards/qualify` | Convertit un prospect en lead, l'assigne et le place dans le step "A qualifier" |
 
-**Payload `POST /cards/qualify`** :
-```json
-{
-  "spreadsheetId": 265238,
-  "rowId": 12345
-}
-```
-
 ---
 
 ## Raccourcis clavier
