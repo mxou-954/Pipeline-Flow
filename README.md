@@ -167,20 +167,6 @@ Toutes les routes sont préfixées par `/cards`.
 
 ---
 
-## Pipelines / Steps noCRM
-
-| ID | Nom | Usage |
-|----|-----|-------|
-| 545016 | A qualifier | Step cible après qualification prospect |
-| 45996 | Tous Prospects | — |
-| 267810 | Top prospects | — |
-| 267808 | TOP ULTRA CHAUDS | — |
-| 650988 | Webinar | — |
-| 268215 | Ex Clients | Exclu du listing |
-| 460220 | Perdus | Step cible du swipe gauche |
-
----
-
 ## Fonctionnalités
 
 - **Swipe animé** avec animations CSS (slide in, swipe left/right)
@@ -203,7 +189,7 @@ cd back && npm run start:dev &
 cd front && npm run dev
 ```
 
-Le frontend tourne sur `http://localhost:3001` et proxy les appels API vers `http://localhost:3000`.
+Le frontend tourne sur `http://localhost:3001` et proxy les appels API vers `http://localhost:3000`. Faites attention lors du lancement a ne pas intervertir !
 cd front && npm run dev
 ```
 
